@@ -1,0 +1,1777 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+   <id value="Hl7PlBaseIg"/>
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <p class="res-header-id">
+            <b>Generated Narrative: ImplementationGuide Hl7PlBaseIg</b>
+         </p>
+         <a name="Hl7PlBaseIg"> </a>
+         <a name="hcHl7PlBaseIg"> </a>
+         <h2>hl7fhirplbaser5</h2>
+         <p>The official URL for this implementation guide is: </p>
+         <pre>http://hl7.org.pl/fhir/ig/pl-base/ImplementationGuide/Hl7PlBaseIg</pre>
+         <div>
+            <p>Polska bazowa specyfikacja krajowa standardu HL7 FHIR</p>
+         </div>
+      </div>
+   </text>
+   <url value="http://hl7.org.pl/fhir/ig/pl-base/ImplementationGuide/Hl7PlBaseIg"/>
+   <version value="0.1.2"/>
+   <name value="hl7fhirplbaser5"/>
+   <title value="Polska specyfikacja bazowa HL7 FHIR (HL7 FHIR PL Base)"/>
+   <status value="draft"/>
+   <date value="2025-09-15T12:50:18+02:00"/>
+   <publisher value="HL7 Poland"/>
+   <contact>
+      <name value="HL7 Poland"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://hl7.org.pl"/>
+      </telecom>
+   </contact>
+   <description value="Polska bazowa specyfikacja krajowa standardu HL7 FHIR"/>
+   <packageId value="Hl7PlBaseIg"/>
+   <license value="CC0-1.0"/>
+   <fhirVersion value="5.0.0"/>
+   <dependsOn id="hl7tx">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+         <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+      </extension>
+      <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+      <packageId value="hl7.terminology.r5"/>
+      <version value="6.5.0"/>
+   </dependsOn>
+   <dependsOn id="hl7ext">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+         <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+      </extension>
+      <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+      <packageId value="hl7.fhir.uv.extensions.r5"/>
+      <version value="5.2.0"/>
+   </dependsOn>
+   <definition>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+         <valueCode value="hl7.fhir.uv.tools.r5#0.8.0"/>
+      </extension>
+      <grouping id="-str-profile">
+         <name value="Struktury: Profile zasobów"/>
+         <description value="Profile zasobów FHIR zawierające zdefiniowane w specyfikacji reguły walidacyjne"/>
+      </grouping>
+      <grouping id="-str-datatype">
+         <name value="Struktury: Profile typów danych"/>
+         <description value="Profile typów danych FHIR zawierające zdefiniowane w specyfikacji reguły walidacyjne"/>
+      </grouping>
+      <grouping id="-str-extension">
+         <name value="Struktury: Definicje rozszerzeń"/>
+         <description value="Rozszerzenia FHIR zdefiniowane w specyfikacji"/>
+      </grouping>
+      <grouping id="-term-valueset">
+         <name value="Terminologia: Zbiory wartości (Value Sets)"/>
+         <description value="Zbiory wartości kodów słownikowych zdefiniowane w specyfikacji"/>
+      </grouping>
+      <grouping id="-term-codesystem">
+         <name value="Terminologia: Słowniki (Code Systems)"/>
+         <description value="Słowniki własne zdefiniowane w specyfikacji"/>
+      </grouping>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-bundle-document.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-bundle-document"/>
+         </reference>
+         <name value="Bundle: document (PL)"/>
+         <description value="Dokument medyczny"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-composition.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-composition"/>
+         </reference>
+         <name value="Composition (PL)"/>
+         <description value="Dane nagłówka dokumentu medycznego"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-condition-diagnosis.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-condition-diagnosis"/>
+         </reference>
+         <name value="Condition: diagnosis (PL)"/>
+         <description value="Rozpoznanie"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-contract.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-contract"/>
+         </reference>
+         <name value="Contract (PL)"/>
+         <description value="Profil bazowy umowy"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-coverage.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-coverage"/>
+         </reference>
+         <name value="Coverage (PL)"/>
+         <description value="Profil bazowy dla produktu medycznego/modelu rozliczeń/ubezpieczenia"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-actualEncounter.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-actualEncounter"/>
+         </reference>
+         <name value="Encounter (PL)"/>
+         <description value="Bazowy profil wizyty lub pobytu"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-plannedEncounter.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-plannedEncounter"/>
+         </reference>
+         <name value="Encounter (PL)"/>
+         <description value="Bazowy profil planowanej wizyty lub pobytu"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-healthcareService-serviceCatalog.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-healthcareService-serviceCatalog"/>
+         </reference>
+         <name value="HealthcareService: Service Catalog (PL)"/>
+         <description value="Katalog usług medycznych"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-documentIdentity.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-documentIdentity"/>
+         </reference>
+         <name value="Identyfikator i wersja dokumentu"/>
+         <description value="Dane identyfikacyjne dokumentu medycznego w postaci unikalnego identyfikatora i wersji"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-location-medicalFacility.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-location-medicalFacility"/>
+         </reference>
+         <name value="Location: Medical Facility (PL)"/>
+         <description value="Placówka medyczna/Miejsce udzielania świadczeń należące do określonego podmiotu medycznego"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-cdaDocumentMetadata.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-cdaDocumentMetadata"/>
+         </reference>
+         <name value="Metadane dokumentu medycznego HL7 CDA"/>
+         <description value="Metadane dokumentu medycznego w standardzie HL7 CDA"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-organization-medicalEntityCell.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-organization-medicalEntityCell"/>
+         </reference>
+         <name value="Organization: Medical Entity Cell (PL)"/>
+         <description value="Komórka organizacyjna podmiotu leczniczego"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-organization-medicalEntityUnit.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-organization-medicalEntityUnit"/>
+         </reference>
+         <name value="Organization: Medical Entity Unit (PL)"/>
+         <description value="Jednostka organizacyjna podmiotu leczniczego"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-organization-medicalPractice.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-organization-medicalPractice"/>
+         </reference>
+         <name value="Organization: Medical Practice (PL)"/>
+         <description value="Podmiot udzielania świadczeń w ramach praktyki zawodowej"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-organization-medicalEntity.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-organization-medicalEntity"/>
+         </reference>
+         <name value="Organization: MedicalEntity (PL)"/>
+         <description value="Bazowy profil podmiotu medycznego (świadczeniodawcy)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-organization-payer.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-organization-payer"/>
+         </reference>
+         <name value="Organization: Payer (PL)"/>
+         <description value="Profil bazowy płatnika"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-organization-pharmacy.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-organization-pharmacy"/>
+         </reference>
+         <name value="Organization: Pharmacy (PL)"/>
+         <description value="Apteka"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-patient.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-patient"/>
+         </reference>
+         <name value="Patient (PL)"/>
+         <description value="Bazowy profil pacjenta"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-practitioner.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-practitioner"/>
+         </reference>
+         <name value="Practitioner (PL)"/>
+         <description value="Bazowy profil pracownika medycznego"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-practitionerRole-documentAuthor.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-practitionerRole-documentAuthor"/>
+         </reference>
+         <name value="PractitionerRole: Author (PL)"/>
+         <description value="Author dokumentu medycznego"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-practitioneRole-informationRecipient.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-practitioneRole-informationRecipient"/>
+         </reference>
+         <name value="PractitionerRole: Information Recipient (PL)"/>
+         <description value="Odbiorca informacji przekazywanej w dokumencie medycznym"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-practitionerRole-serviceRequester.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-practitionerRole-serviceRequester"/>
+         </reference>
+         <name value="PractitionerRole: Service Requester (PL)"/>
+         <description value="Zlecający usługę medyczną"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-serviceRequest-order.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-serviceRequest-order"/>
+         </reference>
+         <name value="Service Request: Order (PL)"/>
+         <description value="Zlecenie usługi medycznej"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-activityDefinition-catalogService.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-activityDefinition-catalogService"/>
+         </reference>
+         <name value="Usługa katalogowa (PL)"/>
+         <description value="Usługa katalogowa"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:complex-type"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-address-eu.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-address-eu"/>
+         </reference>
+         <name value="Address (PL)"/>
+         <description value="Bazowy adres"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-datatype"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:complex-type"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-reference-medicalEntity.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-reference-medicalEntity"/>
+         </reference>
+         <name value="Reference: Medical Entity (PL)"/>
+         <description value="Identyfikator podmiotu leczniczego"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-datatype"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:complex-type"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-reference-medicalentitycompany.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-reference-medicalentitycompany"/>
+         </reference>
+         <name value="Reference: Medical Entity Company (PL)"/>
+         <description value="Identyfikator przedsiębiorstwa podmiotu leczeniczego"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-datatype"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:complex-type"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-reference-medicalEntityUnit.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-reference-medicalEntityUnit"/>
+         </reference>
+         <name value="Reference: Medical Entity Unit (PL)"/>
+         <description value="Identyfikator jednostki organizacyjnej podmiotu leczeniczego"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-datatype"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:complex-type"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-pl-base-reference-medicalPractice.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/pl-base-reference-medicalPractice"/>
+         </reference>
+         <name value="Reference: Medical Practice (PL)"/>
+         <description value="Identyfikator praktyki zawodowej nadany przez właściwą izbę lekarską lub izbę pielęgniarek i połonych"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-datatype"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-activityDefinition-responsibleOrganization.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/activityDefinition-responsibleOrganization"/>
+         </reference>
+         <name value="Activity Definition: Responsible Organization"/>
+         <description value="Podmiot odpowiedzialny za definicję usług medycznej"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-address-isoalpha3countrycode.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/address-isoalpha3countrycode"/>
+         </reference>
+         <name value="Address: ISO Alpha-3 Country Code"/>
+         <description value="Trzyliterowy kod kraju wg ISO 3166"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-address-isonumericcountrycode.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/address-isonumericcountrycode"/>
+         </reference>
+         <name value="Address: ISO Numeric Country Code"/>
+         <description value="Numeryczny kod kraju wg ISO 3166"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-teryt-simc.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/teryt-simc"/>
+         </reference>
+         <name value="Address: SIMC Code (PL)"/>
+         <description value="Kod SIMC"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-teryt-terc.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/teryt-terc"/>
+         </reference>
+         <name value="Address: TERC Code (PL)"/>
+         <description value="Kod TERC"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-address-teryt.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/address-teryt"/>
+         </reference>
+         <name value="Address: TERYT Code (PL)"/>
+         <description value="Kod TERYT"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-composition-basedOnOrder.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/composition-basedOnOrder"/>
+         </reference>
+         <name value="Composition: Based On Order"/>
+         <description value="Zlecenie, w ramach ralizacji którego powstaje dokument"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-composition-informationRecipient.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/composition-informationRecipient"/>
+         </reference>
+         <name value="Composition: Information Recipient"/>
+         <description value="Odbiorca informacji zawartej w dokumencie medycznym"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-composition-payorIdentifier.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/composition-payorIdentifier"/>
+         </reference>
+         <name value="Composition: Payor Identifier"/>
+         <description value="Identyfikator ubezpieczyciela publicznego"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-composition-version.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/composition-version"/>
+         </reference>
+         <name value="Composition: Version"/>
+         <description value="Numer wersji dokumentu"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-patient-identifierOfMother.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/patient-identifierOfMother"/>
+         </reference>
+         <name value="Patient: Identifier of mother (PL)"/>
+         <description value="Identyfikator matki (np. PESEL) jako identyfikator noworodka"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-practitionerRole-reimbursementContractIdentifier.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/practitionerRole-reimbursementContractIdentifier"/>
+         </reference>
+         <name value="PractitionerRole: Reimbursement Contract Identifier"/>
+         <description value="Identyfikator umowy związanej z refundacją świadczeń medycznych"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-healthcareService-catalogServiceDefinition.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/healthcareService-catalogServiceDefinition"/>
+         </reference>
+         <name value="Referencja do usługi katalogowej (PL)"/>
+         <description value="Referencja do usługi katalogowej"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-pl-documentLanguage-VS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/pl-documentLanguage-VS"/>
+         </reference>
+         <name value="Język dokumentu medycznego (Language)"/>
+         <description value="Dopuszczalny język dokumentu medycznego wystawianego w Polsce"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-pl-icd10Condition-VS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/pl-icd10Condition-VS"/>
+         </reference>
+         <name value="Kod rozpoznania (PL)"/>
+         <description value="Kod rozpoznania wg słownika ICD-10"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-pl-icd9plServiceCode-VS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/pl-icd9plServiceCode-VS"/>
+         </reference>
+         <name value="Kod usługi medycznej wg ICD-9-PL"/>
+         <description value="Kod usługi medycznej według ICD-9 PL"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-pl-ageUnit-VS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/pl-ageUnit-VS"/>
+         </reference>
+         <name value="Kody jednostek wieku (AgeUnit)"/>
+         <description value="Kody jednostek wieku oparte na słowniku UCUM"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-pl-confidentialityCode-VS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/pl-confidentialityCode-VS"/>
+         </reference>
+         <name value="Poziom poufności (ConfidentialityCode)"/>
+         <description value="Kod poziomu poufności danych (dokumentu lub innego zasobu)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-pl-medicalPracticetIdentifierPool-VS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/pl-medicalPracticetIdentifierPool-VS"/>
+         </reference>
+         <name value="Pule identyfikatorów praktyk zawodowych (PL)"/>
+         <description value="Pule identyfikatorów praktyk zawodowych nadawanych przez izby zawodowe"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-pl-reimbursementContractIdentifierPool-VS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/pl-reimbursementContractIdentifierPool-VS"/>
+         </reference>
+         <name value="Pule numerów umów związanych z refundacją świadczeń medycznych (PL)"/>
+         <description value="Pule numerów umów związanych z refundacją świadczeń medycznych"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-pl-administrativeGender-VS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/pl-administrativeGender-VS"/>
+         </reference>
+         <name value="Płeć pacjenta (AdministrativeGender)"/>
+         <description value="Określenie płci pacjenta dla celów administracyjnych"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-pl-medicalEntityCellType-VS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/pl-medicalEntityCellType-VS"/>
+         </reference>
+         <name value="Specjalność komórki organizacyjnej (PL)"/>
+         <description value="Specjalność komórki organizacyjnej podmiotu medycznego (cz. VIII SKR)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-pl-practitioner-specialty-VS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/pl-practitioner-specialty-VS"/>
+         </reference>
+         <name value="Specjalność lekarska (PL)"/>
+         <description value="Specjalność lekarska"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-pl-plannedEncounterStatus-VS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/pl-plannedEncounterStatus-VS"/>
+         </reference>
+         <name value="Status planowanej wizyty lub pobytu (Encounter)"/>
+         <description value="Status planowanej wizyty lub pobytu"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-pl-actualEncounterStatus-VS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/pl-actualEncounterStatus-VS"/>
+         </reference>
+         <name value="Status wizyty lub pobytu (Encounter)"/>
+         <description value="Status wizyty lub pobytu, które już się odbyły"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-pl-discharge-disposition-VS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/pl-discharge-disposition-VS"/>
+         </reference>
+         <name value="Tryb wypisu ze szpitala (PL)"/>
+         <description value="Kod trybu wypisu ze szpitala"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-pl-p1DocumentType-VS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/pl-p1DocumentType-VS"/>
+         </reference>
+         <name value="Typ dokumentu medycznego wg P1 (PL)"/>
+         <description value="Typ dokumentu medycznego według klasyfikacji typów dokumentów na platfomie P1"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-pl-medicalProfession-VS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/pl-medicalProfession-VS"/>
+         </reference>
+         <name value="Zawód medyczny (PL)"/>
+         <description value="Zawód medyczny"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-pl-icd10Condition-CS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/pl-icd10Condition-CS"/>
+         </reference>
+         <name value="Kod rozpoznania (PL)"/>
+         <description value="Kod rozpoznania wg słownika ICD-10"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-pl-icd9plServiceCode-CS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/pl-icd9plServiceCode-CS"/>
+         </reference>
+         <name value="Kod usługi medycznej wg ICD-9-PL"/>
+         <description value="Kod usługi medycznej według ICD-9 PL"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-pl-medicalPracticetIdentifierPool-CS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/pl-medicalPracticetIdentifierPool-CS"/>
+         </reference>
+         <name value="Pule identyfikatorów praktyk zawodowych (PL)"/>
+         <description value="Pule identyfikatorów praktyk zawodowych nadawanych przez izby zawodowe"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-pl-reimbursementContractIdentifierPool-CS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/pl-reimbursementContractIdentifierPool-CS"/>
+         </reference>
+         <name value="Pule numerów umów związanych z refundacją świadczeń medycznych (PL)"/>
+         <description value="Pule numerów umów związanych z refundacją świadczeń medycznych"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-pl-medicalEntityCellType-CS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/pl-medicalEntityCellType-CS"/>
+         </reference>
+         <name value="Specjalność komórki organizacyjnej (PL)"/>
+         <description value="Specjalność komórki organizacyjnej podmiotu medycznego (cz. VIII SKR)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-pl-practitioner-specialty-CS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/pl-practitioner-specialty-CS"/>
+         </reference>
+         <name value="Specjalność lekarska (PL)"/>
+         <description value="Specjalność lekarska"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-pl-discharge-disposition-CS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/pl-discharge-disposition-CS"/>
+         </reference>
+         <name value="Tryb wypisu ze szpitala (PL)"/>
+         <description value="Kod trybu wypisu ze szpitala"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-pl-p1DocumentType-CS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/pl-p1DocumentType-CS"/>
+         </reference>
+         <name value="Typ dokumentu medycznego wg P1 (PL)"/>
+         <description value="Typ dokumentu medycznego według klasyfikacji typów dokumentów na platfomie P1"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-pl-medicalProfession-CS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/pl-medicalProfession-CS"/>
+         </reference>
+         <name value="Zawód medyczny (PL)"/>
+         <description value="Zawód medyczny"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <page>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="toc.html"/>
+         </extension>
+         <nameUrl value="toc.html"/>
+         <title value="Table of Contents"/>
+         <generation value="html"/>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="index.html"/>
+            </extension>
+            <nameUrl value="index.html"/>
+            <title value="Wprowadzenie"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="artifacts.html"/>
+            <title value="Artifacts Summary"/>
+            <generation value="html"/>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-bundle-document.html"/>
+               <title value="Bundle: document (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-composition.html"/>
+               <title value="Composition (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-condition-diagnosis.html"/>
+               <title value="Condition: diagnosis (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-contract.html"/>
+               <title value="Contract (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-coverage.html"/>
+               <title value="Coverage (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-actualEncounter.html"/>
+               <title value="Encounter (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-plannedEncounter.html"/>
+               <title value="Encounter (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-healthcareService-serviceCatalog.html"/>
+               <title value="HealthcareService: Service Catalog (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-documentIdentity.html"/>
+               <title value="Identyfikator i wersja dokumentu"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-location-medicalFacility.html"/>
+               <title value="Location: Medical Facility (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-cdaDocumentMetadata.html"/>
+               <title value="Metadane dokumentu medycznego HL7 CDA"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-organization-medicalEntityCell.html"/>
+               <title value="Organization: Medical Entity Cell (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-organization-medicalEntityUnit.html"/>
+               <title value="Organization: Medical Entity Unit (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-organization-medicalPractice.html"/>
+               <title value="Organization: Medical Practice (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-organization-medicalEntity.html"/>
+               <title value="Organization: MedicalEntity (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-organization-payer.html"/>
+               <title value="Organization: Payer (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-organization-pharmacy.html"/>
+               <title value="Organization: Pharmacy (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-patient.html"/>
+               <title value="Patient (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-practitioner.html"/>
+               <title value="Practitioner (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-practitionerRole-documentAuthor.html"/>
+               <title value="PractitionerRole: Author (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-practitioneRole-informationRecipient.html"/>
+               <title value="PractitionerRole: Information Recipient (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-practitionerRole-serviceRequester.html"/>
+               <title value="PractitionerRole: Service Requester (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-serviceRequest-order.html"/>
+               <title value="Service Request: Order (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-activityDefinition-catalogService.html"/>
+               <title value="Usługa katalogowa (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-address-eu.html"/>
+               <title value="Address (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-reference-medicalEntity.html"/>
+               <title value="Reference: Medical Entity (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-reference-medicalentitycompany.html"/>
+               <title value="Reference: Medical Entity Company (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-reference-medicalEntityUnit.html"/>
+               <title value="Reference: Medical Entity Unit (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-pl-base-reference-medicalPractice.html"/>
+               <title value="Reference: Medical Practice (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-activityDefinition-responsibleOrganization.html"/>
+               <title value="Activity Definition: Responsible Organization"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-address-isoalpha3countrycode.html"/>
+               <title value="Address: ISO Alpha-3 Country Code"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-address-isonumericcountrycode.html"/>
+               <title value="Address: ISO Numeric Country Code"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-teryt-simc.html"/>
+               <title value="Address: SIMC Code (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-teryt-terc.html"/>
+               <title value="Address: TERC Code (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-address-teryt.html"/>
+               <title value="Address: TERYT Code (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-composition-basedOnOrder.html"/>
+               <title value="Composition: Based On Order"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-composition-informationRecipient.html"/>
+               <title value="Composition: Information Recipient"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-composition-payorIdentifier.html"/>
+               <title value="Composition: Payor Identifier"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-composition-version.html"/>
+               <title value="Composition: Version"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-patient-identifierOfMother.html"/>
+               <title value="Patient: Identifier of mother (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-practitionerRole-reimbursementContractIdentifier.html"/>
+               <title value="PractitionerRole: Reimbursement Contract Identifier"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-healthcareService-catalogServiceDefinition.html"/>
+               <title value="Referencja do usługi katalogowej (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-pl-documentLanguage-VS.html"/>
+               <title value="Język dokumentu medycznego (Language)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-pl-icd10Condition-VS.html"/>
+               <title value="Kod rozpoznania (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-pl-icd9plServiceCode-VS.html"/>
+               <title value="Kod usługi medycznej wg ICD-9-PL"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-pl-ageUnit-VS.html"/>
+               <title value="Kody jednostek wieku (AgeUnit)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-pl-confidentialityCode-VS.html"/>
+               <title value="Poziom poufności (ConfidentialityCode)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-pl-medicalPracticetIdentifierPool-VS.html"/>
+               <title value="Pule identyfikatorów praktyk zawodowych (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-pl-reimbursementContractIdentifierPool-VS.html"/>
+               <title value="Pule numerów umów związanych z refundacją świadczeń medycznych (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-pl-administrativeGender-VS.html"/>
+               <title value="Płeć pacjenta (AdministrativeGender)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-pl-medicalEntityCellType-VS.html"/>
+               <title value="Specjalność komórki organizacyjnej (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-pl-practitioner-specialty-VS.html"/>
+               <title value="Specjalność lekarska (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-pl-plannedEncounterStatus-VS.html"/>
+               <title value="Status planowanej wizyty lub pobytu (Encounter)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-pl-actualEncounterStatus-VS.html"/>
+               <title value="Status wizyty lub pobytu (Encounter)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-pl-discharge-disposition-VS.html"/>
+               <title value="Tryb wypisu ze szpitala (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-pl-p1DocumentType-VS.html"/>
+               <title value="Typ dokumentu medycznego wg P1 (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-pl-medicalProfession-VS.html"/>
+               <title value="Zawód medyczny (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-pl-icd10Condition-CS.html"/>
+               <title value="Kod rozpoznania (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-pl-icd9plServiceCode-CS.html"/>
+               <title value="Kod usługi medycznej wg ICD-9-PL"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-pl-medicalPracticetIdentifierPool-CS.html"/>
+               <title value="Pule identyfikatorów praktyk zawodowych (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-pl-reimbursementContractIdentifierPool-CS.html"/>
+               <title value="Pule numerów umów związanych z refundacją świadczeń medycznych (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-pl-medicalEntityCellType-CS.html"/>
+               <title value="Specjalność komórki organizacyjnej (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-pl-practitioner-specialty-CS.html"/>
+               <title value="Specjalność lekarska (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-pl-discharge-disposition-CS.html"/>
+               <title value="Tryb wypisu ze szpitala (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-pl-p1DocumentType-CS.html"/>
+               <title value="Typ dokumentu medycznego wg P1 (PL)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-pl-medicalProfession-CS.html"/>
+               <title value="Zawód medyczny (PL)"/>
+               <generation value="generated"/>
+            </page>
+         </page>
+      </page>
+      <parameter>
+         <code value="copyrightyear"/>
+         <value value="2025+"/>
+      </parameter>
+      <parameter>
+         <code value="releaselabel"/>
+         <value value="ci-build"/>
+      </parameter>
+      <parameter>
+         <code value="autoload-resources"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/capabilities"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/examples"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/extensions"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/models"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/operations"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/profiles"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/resources"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/vocabulary"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/maps"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/testing"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/history"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="fsh-generated/resources"/>
+      </parameter>
+      <parameter>
+         <code value="path-pages"/>
+         <value value="template/config"/>
+      </parameter>
+      <parameter>
+         <code value="path-pages"/>
+         <value value="input/images"/>
+      </parameter>
+      <parameter>
+         <code value="path-liquid"/>
+         <value value="template/liquid"/>
+      </parameter>
+      <parameter>
+         <code value="path-liquid"/>
+         <value value="input/liquid"/>
+      </parameter>
+      <parameter>
+         <code value="path-qa"/>
+         <value value="temp/qa"/>
+      </parameter>
+      <parameter>
+         <code value="path-temp"/>
+         <value value="temp/pages"/>
+      </parameter>
+      <parameter>
+         <code value="path-output"/>
+         <value value="output"/>
+      </parameter>
+      <parameter>
+         <code value="path-tx-cache"/>
+         <value value="input-cache/txcache"/>
+      </parameter>
+      <parameter>
+         <code value="path-suppressed-warnings"/>
+         <value value="input/ignoreWarnings.txt"/>
+      </parameter>
+      <parameter>
+         <code value="path-history"/>
+         <value value="http://hl7.org.pl/fhir/ig/pl-base/history.html"/>
+      </parameter>
+      <parameter>
+         <code value="template-html"/>
+         <value value="template-page.html"/>
+      </parameter>
+      <parameter>
+         <code value="template-md"/>
+         <value value="template-page-md.html"/>
+      </parameter>
+      <parameter>
+         <code value="apply-contact"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-context"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-copyright"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-jurisdiction"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-license"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-publisher"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-version"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-wg"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="active-tables"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="fmm-definition"/>
+         <value value="http://hl7.org/fhir/versions.html#maturity"/>
+      </parameter>
+      <parameter>
+         <code value="propagate-status"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="excludelogbinaryformat"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="tabbed-snapshots"/>
+         <value value="true"/>
+      </parameter>
+   </definition>
+</ImplementationGuide>
