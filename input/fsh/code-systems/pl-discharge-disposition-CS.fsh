@@ -2,15 +2,15 @@ CodeSystem: PLDischargeDispositionCS
 Id: pl-dischargeDisposition-CS
 Title: "Tryb wypisu ze szpitala (PL)"
 Description: "Kod trybu wypisu ze szpitala"
+* ^meta.profile = "http://hl7.org.pl/fhir/StructureDefinition/pl-base-codeSystem"
 * ^url = "http://hl7.org.pl/fhir/CodeSystem/pl-dischargeDisposition-CS"
-// * ^version = ""
+* ^version = "1"
+* ^status = #active
 * ^date = "2019-06-26"
 * ^publisher = "Minister Zdrowia"
 * ^jurisdiction.coding.system = $iso3166-1-2
 * ^jurisdiction.coding.code = #PL
 * ^jurisdiction.coding.display = "Poland"
-// * ^copyright = "Licencja CC0-1.0"
-// * ^copyrightLabel = ""
 * ^valueSet = "http://hl7.org.pl/fhir/ValueSet/pl-dischargeDisposition-VS"
 * ^count = 10
 * #1 "zakończenie procesu terapeutycznego lub diagnostycznego"
