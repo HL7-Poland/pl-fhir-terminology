@@ -11,7 +11,7 @@ Description: "Specjalność komórki organizacyjnej podmiotu medycznego (cz. VII
 * ^jurisdiction.coding.system = $iso3166-1-2
 * ^jurisdiction.coding.code = #PL
 * ^jurisdiction.coding.display = "Poland"
-* ^valueSet = "http://hl7.org.pl/fhir/ValueSet/pl-dischargeDisposition-VS"
+* ^valueSet = "http://hl7.org.pl/fhir/ValueSet/pl-medicalEntityCellType-VS"
 * ^count = 359
 * #0010 "Poradnia (gabinet) lekarza podstawowej opieki zdrowotnej"
 * #0012 "Poradnia (gabinet) podstawowej opieki zdrowotnej"
