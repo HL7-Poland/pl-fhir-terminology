@@ -9,7 +9,7 @@ Alias: $v3-confidentiality = http://terminology.hl7.org/CodeSystem/v3-Confidenti
 Alias: $v3-actCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $adm-gender = http://hl7.org/fhir/administrative-gender
 Alias: $encounter-status = http://hl7.org/fhir/encounter-status
-Alias: $iso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
+Alias: $iso3166-1-2 = urn:iso:std:iso:3166
 
 // PL Terminology
 Alias: $icd-10 = http://hl7.org.pl/fhir/CodeSystem/pl-icd10Condition-CS

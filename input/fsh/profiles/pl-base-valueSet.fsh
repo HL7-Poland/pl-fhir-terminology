@@ -3,7 +3,7 @@ Parent: ValueSet
 Id: pl-base-valueSet
 Title: "ValueSet: Zbiór wartości"
 Description: "Zbiór wartości wchodzący w skład specyfikacji PL Terminology"
-* ^url = "http://hl7.org.pl/fhir/StructureDefinition/pl-base-codeSystem"
+* ^url = "http://hl7.org.pl/fhir/StructureDefinition/pl-base-valueSet"
 * url 1..1 MS
 * identifier 0..0
 * version 1..1 MS
