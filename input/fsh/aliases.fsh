@@ -15,7 +15,9 @@ Alias: $iso3166-1-2 = urn:iso:std:iso:3166
 Alias: $icd-10 = http://hl7.org.pl/fhir/CodeSystem/pl-icd10Condition-CS
 Alias: $icd-9-pl = http://hl7.org.pl/fhir/CodeSystem/pl-icd9plServiceCode-CS
 Alias: $org-cell-type = http://hl7.org.pl/fhir/CodeSystem/pl-medicalEntityCellType-CS
-Alias: $mri-fieldStrength = http://hl7.org.pl/fhir/CodeSystem/pl-imaging-mriScannerFieldStrength-cs
+// Alias: $mri-fieldStrength = http://hl7.org.pl/fhir/CodeSystem/pl-imaging-mriScannerFieldStrength-cs
+// REMOVIDO: pertence ao IG de Imaging (pl-fhir-imaging), não ao IG de Terminology/Lab.
+// Mantenha comentado para evitar vazamento de domínio entre IGs.
 Alias: $p1-document-class = http://hl7.org.pl/fhir/CodeSystem/pl-p1DocumentType-CS
 Alias: $medical-profession = http://hl7.org.pl/fhir/CodeSystem/pl-medicalProfession-CS
 Alias: $practitioner-specialty = http://hl7.org.pl/fhir/CodeSystem/pl-practitionerSpecialty-CS
